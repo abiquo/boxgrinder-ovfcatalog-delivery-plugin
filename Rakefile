@@ -4,7 +4,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.version = "0.1"
+  gem.version = "0.1.1"
   gem.name = "boxgrinder-ovfcatalog-delivery-plugin"
   gem.homepage = "http://github.com/abiquo/boxgrinder-ovfcatalog-delivery-plugin"
   gem.license = "MIT"

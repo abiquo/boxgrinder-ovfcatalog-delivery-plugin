@@ -5,6 +5,8 @@ require 'boxgrinder-build/plugins/base-plugin'
 
 module BoxGrinder
   class OVFCatalog < BasePlugin
+    plugin :type => :delivery, :name => :ovfcatalog, :full_name  => "Upload appliance to Abiquo OVFCatalog"
+
     def validate
       set_default_config_value('category', 'Misc')
       set_default_config_value('name', @appliance_config.name)
@@ -92,4 +94,3 @@ module BoxGrinder
   end
 end
 
-plugin :class => BoxGrinder::OVFCatalog, :type => :delivery, :name => :ovfcatalog, :full_name  => "Upload appliance to Abiquo OVFCatalog"
